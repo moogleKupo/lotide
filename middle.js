@@ -19,22 +19,21 @@ function eqArray(numbers1, numbers2) {
   }
 
   function middle(arr) {
-    let indexOdd = ((arr.length + 1) / 2);
-    let indexEven = ((arr.length) / 2);
+    let indexOdd = [];
+    let indexEven = [];
+
     if(arr.length < 2) {
       return [];
     } else if ((arr.length % 2) != 0) {
-      console.log(arr[indexOdd]);
+      indexOdd.push(arr[Math.floor((arr.length + 1) / 2 - 1)]);
         return indexOdd;
     } else {
-      console.log(arr[indexEven]);
-      return arr[indexEven];
+      indexEven.push(arr[arr.length / 2 - 1], arr[arr.length / 2]);
+      return indexEven;
     }
+  }
 
     //test
 
    console.log(middle([1, 2, 3, 4]));
     console.log(middle([1, 2, 3, 4, 5, 6]));
-
-    
-  }
