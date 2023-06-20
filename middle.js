@@ -17,3 +17,24 @@ function eqArray(numbers1, numbers2) {
     }
     return true;
   }
+
+  function middle(arr) {
+    let indexOdd = ((arr.length + 1) / 2);
+    let indexEven = ((arr.length) / 2);
+    if(arr.length < 2) {
+      return [];
+    } else if ((arr.length % 2) != 0) {
+      console.log(arr[indexOdd]);
+        return indexOdd;
+    } else {
+      console.log(arr[indexEven]);
+      return arr[indexEven];
+    }
+
+    //test
+
+   console.log(middle([1, 2, 3, 4]));
+    console.log(middle([1, 2, 3, 4, 5, 6]));
+
+    
+  }
