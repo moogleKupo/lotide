@@ -12,4 +12,19 @@ const countLetters = function(sentence){
   // remove spaces
   const noSpaceSentence = sentence.replace(/\s/g, '');
   
-}
+  for (let letter of noSpaceSentence){
+    if (counts[letter]){
+      counts[letter] += 1;
+    } else {
+      counts[letter] = 1;
+    }
+  }
+  return counts;
+};
+
+//test 
+
+// Example usage
+const sentence = 'LHL';
+const letterCounts = countLetters(sentence);
+console.log(letterCounts);
