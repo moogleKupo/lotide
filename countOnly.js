@@ -1,44 +1,26 @@
-function assertArraysEqual(actual, expected) {
-  if (eqArrays(actual, expected)) {
-    console.log(`✅ Assertion Passed: [${actual}] === [${expected}]`);
+const assertEqual = function(actual, expected) {
+  if (actual === expected) {
+    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
   } else {
-    console.log(`❌ Assertion Failed: [${actual}] !== [${expected}]`);
+    console.log(`❌❌❌ Assertion Failed: ${actual} !== ${expected}`);
   }
-}
-
-function eqArray(numbers1, numbers2) {
-  if (numbers1.length !== numbers2.length) {
-    return false;
-  }
-  for (let i = 0; i < numbers1.length; i++) {
-    if (numbers1[i] !== numbers2[i]){
-      return false;
-      }
-    }
-    return true;
-  }
+};
 
   const countOnly = function(allItems, itemsToCount) {
-    results = {};
-    for (const item of allItems) {
-      console.log(item);
-    }
-      if (results[item]) {
-        results[item] += 1;
-      } else {
-        results[item] = 1;
-      }
-        if (itemsToCount[item]) {
-          if (results[item]) {
-            results[item] += 1;
-          } else {
-            results[item] = 1;
-          }
-          }
+    let results = {};
+    
+    for (let item of allItems) {
+      if (itemsToCount[item]) {
+        if (results[item]) {
+          results[item] += 1;
+        } else {
+          results[item] = 1;
         }
+      }
+    }
+    
     return results;
-  }
-  
+  };
 
   const firstNames = [
     "Karl",
