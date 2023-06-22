@@ -6,3 +6,10 @@ const assertEqual = function(actual, expected) {
   }
 };
 
+const countLetters = function(sentence){
+  const counts = {};
+
+  // remove spaces
+  const noSpaceSentence = sentence.replace(/\s/g, '');
+  
+}
