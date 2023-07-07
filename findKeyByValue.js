@@ -14,7 +14,7 @@ for (let key in obj) {
   }
   return undefined;
 };
-
+/*
 console.log(findKeyByValue({color: 'Red'}, 'Red'));
 const bestTVShowsByGenre = { 
   sci_fi: "The Expanse",
@@ -24,3 +24,6 @@ const bestTVShowsByGenre = {
 
 assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
 assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
+*/
+
+module.exports = findKeyByValue;

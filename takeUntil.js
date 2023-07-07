@@ -28,5 +28,8 @@ let newArray = [];
       return newArray;
 console.log(newArray)
 }
-
+/*
 console.log(takeUntil([1,2,-4,5], x => x > 0))
+*/
+
+module.exports = takeUntil;

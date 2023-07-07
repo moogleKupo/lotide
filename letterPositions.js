@@ -33,5 +33,8 @@ const letter = sentence[i];
 }
   return positions;
 }
-
+/*
 assertArraysEqual(letterPositions("hello").e, [1]);
+*/
+
+module.exports = letterPositions;

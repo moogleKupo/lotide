@@ -27,7 +27,7 @@ function eqArray(numbers1, numbers2) {
     resultArr = _.without(sourceArr, ...itemsToRemoveArr);
     return resultArr;
   }
-  // test
+  /* test
   console.log(without([1,2,3,7,8,9], [3,7]));
 
   //native javascript
@@ -37,4 +37,7 @@ function eqArray(numbers1, numbers2) {
   }
   //test
   console.log(without([1,2,3,7,8,9], [3,7]));
+  */
+
+  module.exports = without;
   

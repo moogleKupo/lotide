@@ -28,3 +28,5 @@ const countLetters = function(sentence){
 const sentence = 'LHL';
 const letterCounts = countLetters(sentence);
 console.log(letterCounts);
+
+module.exports = countLetters;

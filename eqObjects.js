@@ -28,10 +28,14 @@ function eqArray(numbers1, numbers2) {
 const eqObjects = function(object1, object2) {
 
 };
-console.log(eqObjects(shirtObject, anotherShirtObject));
+
+/* console.log(eqObjects(shirtObject, anotherShirtObject));
 
 
 const longSleeveShirtObject = {size: "medium", color: "red", sleeveLength: "long" };
 eqObjects(shirtObject, longSleeveShirtObject);
 
 console.log(assertEqual(shirtObject, anotherShirtObject));
+*/
+
+module.exports = eqObjects;
