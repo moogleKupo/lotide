@@ -1,4 +1,30 @@
 const middle = require('../middle');
+const assert = require('chai').assert;
+
+
+describe('middle', () => {
+  it('should return an empty array for an array with less than 2 elements', () => {
+    const input = [1];
+    const expectedOutput = [];
+    assert.deepEqual(middle(input), expectedOutput);
+  });
+
+  it('should return the middle element for an array with odd length', () => {
+    const input = [1, 2, 3, 4, 5];
+    const expectedOutput = [3];
+    assert.deepEqual(middle(input), expectedOutput);
+  });
+
+  it('should return the two middle elements for an array with even length', () => {
+    const input = [1, 2, 3, 4];
+    const expectedOutput = [2, 3];
+    assert.deepEqual(middle(input), expectedOutput);
+  });
+});
+
+
+/* 
+const middle = require('../middle');
 const assertArraysEqual = require('../assertArraysEqual.js');
 //test
 // Test Case 1: Odd-length array
@@ -30,3 +56,4 @@ const arr5 = [6, 7];
 const expected5 = [6, 7];
 const actual5 = middle(arr5);
 assertArraysEqual(actual5, expected5);
+*/

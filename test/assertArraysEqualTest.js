@@ -1,6 +1,20 @@
 const assertArraysEqual = require('../assertArraysEqual');
-const eqArray = require('../eqArray');
-//test
+const assert = require('chai').assert;
+
+describe("#assertArraysEqual", () => {
+  it("returns true for ([1, 2, 3], [1, 2, 3])", () => {
+    assert.doesNotThrow(() => {
+      assertArraysEqual([1, 2, 3], [1, 2, 3]);
+    });
+  });
+
+  it("returns false for ([1, 2, 3], [1, 2, 4])", () => {
+    assert.throws(() => {
+      assertArraysEqual([1, 2, 3], [1, 2, 4]);
+    });
+  });
+});
+/*test
 // Test # 1: Arrays with the same elements in the same order
 const arr1 = [1, 2, 3];
 const arr2 = [1, 2, 3];
@@ -25,3 +39,4 @@ assertArraysEqual(arr7, arr8);
 const arr9 = ["cat", "dog", "rabbit"];
 const arr10 = ["cat", "dog", "rabbit"];
 assertArraysEqual(arr9, arr10);
+*/

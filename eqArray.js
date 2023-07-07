@@ -12,4 +12,4 @@ function eqArray(numbers1, numbers2) {
     return true;
   };
 
-module.exports = eqArray;
+  module.exports = eqArray;
