@@ -1,22 +1,5 @@
-function assertArraysEqual(actual, expected) {
-  if (eqArrays(actual, expected)) {
-    console.log(`✅ Assertion Passed: [${actual}] === [${expected}]`);
-  } else {
-    console.log(`❌ Assertion Failed: [${actual}] !== [${expected}]`);
-  }
-}
-
-function eqArray(numbers1, numbers2) {
-  if (numbers1.length !== numbers2.length) {
-    return false;
-  }
-  for (let i = 0; i < numbers1.length; i++) {
-    if (numbers1[i] !== numbers2[i]){
-      return false;
-      }
-    }
-    return true;
-  }
+const assertArraysEqual = require('./assertArraysEqual')
+const eqArray = rewuire('./eqArray')
 
   function flatten(arr) {
     let flatArray = [];
@@ -27,8 +10,5 @@ function eqArray(numbers1, numbers2) {
     }
     return flatArray;
   }
-  /*test
-  console.log(flatten([1, 2, [3, 4], 5, [6]])) // => [1, 2, 3, 4, 5, 6]
-  */
 
 module.exports = flatten;
