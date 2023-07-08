@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@mooglekupo/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "lodash clone for learning purposes",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/moogleKupo/lotide.git"
   },
-  "author": "",
+  "author": "Taylor Maine - github: moogleKupo",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/moogleKupo/lotide/issues"

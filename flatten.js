@@ -18,8 +18,8 @@ function eqArray(numbers1, numbers2) {
     return true;
   }
 
-  let flatArray = [];
   function flatten(arr) {
+    let flatArray = [];
     for (let i = 0; i < arr.length; i++){
       if (Array.isArray(arr[i])){
         flatArray.push(...arr[i]);
