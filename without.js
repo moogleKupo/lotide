@@ -11,7 +11,4 @@ const eqArray = require('./eqArray')
       return result;
     };
 
-    /* Tests
-assertArraysEqual(without([1, 2, 3], [1]), [2, 3]);
-assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]);
-*/
+module.exports = without;
