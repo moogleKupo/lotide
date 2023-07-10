@@ -1,5 +1,5 @@
 const assertArraysEqual = require('./assertArraysEqual')
-const eqArray = rewuire('./eqArray')
+const eqArray = require('./eqArray')
 
   function flatten(arr) {
     let flatArray = [];
